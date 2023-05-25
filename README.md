@@ -26,7 +26,7 @@ This is a list used to store our tasks or "to-dos". Each task is a list containi
         '''
 This function generates HTML content for our webpage. The todo list is generated dynamically based on the todos list.
 
-Routes and handling requests:
+## Routes and handling requests:
 
 ``@app.route('/', methods=['GET', 'POST'])
 async def home(request):
