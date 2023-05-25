@@ -7,7 +7,7 @@ Code Explanation
 
 python
 
-from microdot_asyncio import Microdot, Response
+``from microdot_asyncio import Microdot, Response``
 
 app = Microdot()
 Response.default_content_type = 'text/html'
