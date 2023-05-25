@@ -3,12 +3,12 @@
 This Python application is a simple implementation of a To-Do list web app using the microdot_asyncio library.
 
 ## Imports and setup:
+```
+from microdot_asyncio import Microdot, Response
 
-``from microdot_asyncio import Microdot, Response``
-
-``app = Microdot()
-Response.default_content_type = 'text/html'``
-
+app = Microdot()
+Response.default_content_type = 'text/html'
+```
 The microdot_asyncio library provides a lightweight, asynchronous, and fast API framework. Microdot is a class for creating an application object, and Response is used to handle HTTP responses. We then create an instance of the Microdot class, representing our web application, and set the default content type of HTTP responses to text/html.
 
 ## Data storage:
