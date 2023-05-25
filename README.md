@@ -19,12 +19,13 @@ This is a list used to store our tasks or "to-dos". Each task is a list containi
 
 ## HTML generation:
 
-``def htmldoc():
-    todo_list = ''.join([f'<li>{todo[1]} - Priority: {todo[2]} - <a href="/toggle/{i}">{"Complete" if not todo[0] else "Uncomplete"}</a> - <a href="/delete/{i}">Delete</a></li>' for i, todo in enumerate(todos)])``
+```
+def htmldoc():
+    todo_list = ''.join([f'<li>{todo[1]} - Priority: {todo[2]} - <a href="/toggle/{i}">{"Complete" if not todo[0] else "Uncomplete"}</a> - <a href="/delete/{i}">Delete</a></li>' for i, todo in enumerate(todos)])
 
-    return f'''
+    return f
         <!-- HTML content here -->
-        '''
+```        
 This function generates HTML content for our webpage. The todo list is generated dynamically based on the todos list.
 
 ## Routes and handling requests:
