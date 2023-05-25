@@ -14,6 +14,7 @@ The microdot_asyncio library provides a lightweight, asynchronous, and fast API 
 ## Data storage:
 
 ``todos = []``
+
 This is a list used to store our tasks or "to-dos". Each task is a list containing three items: a boolean indicating if the task is completed, the name of the task, and its priority.
 
 ## HTML generation:
@@ -57,6 +58,7 @@ These are the routes that our application handles. The home route accepts both G
 ## Running the app:
 
 ``app.run(debug=True, port=8008)``
+
 Finally, we run our application on port 8008 with debug mode enabled.
 
 For more information on microdot_asyncio, please visit the official microdot_asyncio documentation.
