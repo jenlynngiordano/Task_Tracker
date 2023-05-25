@@ -49,10 +49,10 @@ async def toggle(request, index):
     todos[int(index)][0] = not todos[int(index)][0]
     return htmldoc()
 
-@app.route('/delete/<index>')
+``@app.route('/delete/<index>')
 async def delete(request, index):
     todos.pop(int(index))
-    return htmldoc()
+    return htmldoc()``
     
 These are the routes that our application handles. The home route accepts both GET and POST methods. When a POST request is received, a new task is added to our todos list. The add route also accepts a POST request to add a new task. The toggle route toggles the status of a task between completed and uncompleted, and the delete route removes a task from the list.
 
