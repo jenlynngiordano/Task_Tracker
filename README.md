@@ -2,7 +2,6 @@
 
 This Python application is a simple implementation of a To-Do list web app using the microdot_asyncio library.
 
-Code Explanation
 ## Imports and setup:
 
 ``from microdot_asyncio import Microdot, Response``
