@@ -30,29 +30,32 @@ This function generates HTML content for our webpage. The todo list is generated
 
 ## Routes and handling requests:
 
-``@app.route('/', methods=['GET', 'POST'])
+```
+@app.route('/', methods=['GET', 'POST'])
 async def home(request):
     if request.method == 'POST':
         todos.append([False, request.form.get('task'), request.form.get('priority')])
-    return htmldoc()``
+    return htmldoc()
 
 
-``@app.route('/add', methods=['POST'])
+@app.route('/add', methods=['POST'])
 async def add(request):
     todos.append([False, request.form.get('task'), request.form.get('priority')])
-    return htmldoc()``
+    return htmldoc()
 
 
-``@app.route('/toggle/<index>')
+@app.route('/toggle/<index>')
 async def toggle(request, index):
     todos[int(index)][0] = not todos[int(index)][0]
-    return htmldoc()``
+    return htmldoc()
 
 
-``@app.route('/delete/<index>')
+@app.route('/delete/<index>')
 async def delete(request, index):
     todos.pop(int(index))
-    return htmldoc()``
+    return htmldoc()
+  ```
+   
     
 These are the routes that our application handles. The home route accepts both GET and POST methods. When a POST request is received, a new task is added to our todos list. The add route also accepts a POST request to add a new task. The toggle route toggles the status of a task between completed and uncompleted, and the delete route removes a task from the list.
 
